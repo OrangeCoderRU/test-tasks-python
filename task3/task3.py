@@ -66,8 +66,6 @@ def read_log(path, date1, date2):
             if current_dt == end_dt:
                 current_date_flag = False
                 end_volume = Barrell.current
-            if current_date_flag:
-                pass
             if "top" in line:
                 match = re.match("\d*", line[57:])
                 litr = match.group()
