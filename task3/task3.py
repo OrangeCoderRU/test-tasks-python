@@ -68,7 +68,7 @@ def read_log(path, date1, date2):
                 current_date_flag = False
                 end_volume = Barrell.current
             if current_date_flag:
-                print(line)
+                pass
             if "top" in line:
                 match = re.match("\d*", line[57:])
                 litr = match.group()
@@ -127,7 +127,6 @@ def prepare_string(list_res):
 def csv_write(list_string):
     """Записываем данные"""
     myfile = "res.csv"
-    print(list_string)
     with open(myfile, "w", newline="") as file:
         writer = csv.writer(file)
         writer.writerows(list_string)
