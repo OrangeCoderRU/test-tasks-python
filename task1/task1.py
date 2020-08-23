@@ -14,7 +14,7 @@ def itoBase(nb, base):
 
 def usage():
     """Шаблон параметров командной строки"""
-    usage = "python3 task.1py num base"
+    usage = "usage: python3 task.1py num base"
     print(usage)
 
 def main():
