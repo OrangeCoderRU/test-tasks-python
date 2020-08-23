@@ -5,7 +5,7 @@ char = '*'
 
 def usage():
     """Шаблон параметров командной строки"""
-    usage = "python3 task4.py string1 string2"
+    usage = "usage: python3 task4.py string1 string2"
     print(usage)
 
 def my_replace(string, char):
