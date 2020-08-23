@@ -92,18 +92,10 @@ def read_log(path, date1, date2):
                 else:
                     Barrell.down(int(litr))
         
-        list_res =[]
-        list_res.append(Barrell.trying_up)
-        list_res.append(up_up)
-        list_res.append(up_not)
-        list_res.append(errors_up)
-        list_res.append(errors_down)
-        list_res.append((errors_up + errors_down) / (Barrell.trying_up + Barrell.trying_down) * 100)
-        list_res.append(Barrell.trying_down)
-        list_res.append(down_down)
-        list_res.append(down_not)
-        list_res.append(start_volume)
-        list_res.append(end_volume)
+        list_res =[Barrell.trying_up, up_up, up_not, errors_up, errors_down,
+        (errors_up + errors_down) / (Barrell.trying_up + Barrell.trying_down) * 100,
+        Barrell.trying_down, down_down, down_not, start_volume, end_volume]
+   
     return list_res
 
 def prepare_string(list_res):
