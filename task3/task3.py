@@ -45,7 +45,6 @@ def read_log(path, date1, date2):
     start_dt = read_time(date1)
     end_dt = read_time(date2)
     current_date_flag = False
-    print(start_dt, end_dt)
     with open(path, "r") as file:
         str1 = file.readline()
         capacity = int(file.readline())
