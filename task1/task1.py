@@ -21,6 +21,7 @@ def main():
     if len(sys.argv) == 3:
         itoBase(sys.argv[1], sys.argv[2])
     elif len(sys.argv) == 4:
+        """Перегрузка метода, которую не написал"""
         itoBase(sys.argv[1], sys.argv[2], sys.argv[3])
     else:
         usage()
